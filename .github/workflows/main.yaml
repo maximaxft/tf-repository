@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Terraform
     env:
-      GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.TOKEN }}
     steps:
     - uses: actions/checkout@v2
     - name: Setup Terraform
