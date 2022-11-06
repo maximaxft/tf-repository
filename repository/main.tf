@@ -3,9 +3,5 @@ resource "github_repository" "example" {
   description = "New repository test instanciate by terraform"
 
   private = true
-
-  template {
-    owner      = "github"
-    repository = "terraform-module-template"
-  }
+  
 }
