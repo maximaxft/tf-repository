@@ -6,7 +6,7 @@ resource "github_repository" "example" {
 
 }
 
-resource "github_repository" "example" {
+resource "github_repository" "example2" {
   name        = "testmax2"
   description = "New repository test instanciate by terraform"
 
