@@ -46,7 +46,7 @@ jobs:
       timeout-minutes: 15
       with:
         secret: ${{ secrets.TOKEN }}
-        approvers: mcampagna
+        approvers: maximaxft
         minimum-approvals: 1
         issue-title: "Deploy github repository with terraform"
 
