@@ -1,6 +1,7 @@
 name: Création des repository avec terraform
 
 permissions:
+  issues: write
   contents: read
   pull-requests: write
 
