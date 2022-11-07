@@ -41,6 +41,14 @@ jobs:
       working-directory: ./repository # Use your environment folder
       shell: bash
 
+    - uses: trstringer/manual-approval@v1
+      timeout-minutes: 15
+      with:
+        secret: ${{ secrets.TOKEN }}
+        approvers: mcampagna
+        minimum-approvals: 1
+        issue-title: "Deploy github repository with terraform"
+
     - name: Terraform Apply
       run: terraform apply -input=false tf.plan
       working-directory: ./repository # Use your environment folder
